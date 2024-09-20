@@ -66,17 +66,27 @@ a{
     align-items: center;
     justify-content: center;
 }
-.navright ul{
+.navright ul {
     display: flex;
     gap: 20px;
 }
-.navright ul li a{
+
+.navright ul li a {
     font-size: 15px;
     font-weight: 600;
-}
-.navright ul li a ,i{
     color: var(--secondary-color);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
+.navright ul li a i {
+    color: var(--secondary-color);
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.navright ul li a:hover, .navright ul li a:hover i {
+    color: #e95207; 
+    transform: scale(1.1); 
+}
+
 
 /* .hero_section */
 
